@@ -23,18 +23,29 @@
             <li><strong>OOP qo'llab-quvvatlashi:</strong> Class lar, interfeyslar va meros olish kabi imkoniyatlarni
                 taqdim etadi.</li>
             <li><strong>Katta loyihalar uchun qulaylik:</strong> Kodni yaxshiroq tashkil qilish va o'qiluvchanlikni
-                oshiradi.</li>
-            <li><strong>JavaScript bilan to'liq moslik:</strong> TypeScript kodini JavaScript-ga kompilyatsiya qilish
-                mumkin.</li>
+                oshiradi. Katta jamoalar bilan ishlashda xatoliklarni oldini olishga yordam beradi.</li>
+            <li><strong>JavaScript bilan to'liq moslik:</strong> TypeScript'da yozilgan kod JavaScript'ga transkompilyatsiya qilinadi (tahrir qilinadi). Bu barcha brauzerlar va JavaScript muhitlarida ishlash imkonini beradi.</li>
+        </ul>
+        <h2>Kamchiligi</h2>
+        <ul>
+            <li>Statik typing tufayli yozilishi ko‘proq vaqt talab qilishi mumkin.</li>
+            <li>O‘rganish uchun dastlabki bosqichda biroz vaqt talab qilinadi.</li>
         </ul>
 
         <h2>Misol</h2>
         <p>Quyida TypeScript kodining oddiy namunasi keltirilgan:</p>
         <pre style="background: #f4f4f4; padding: 10px; border-left: 4px solid #007acc;">
-<code>function meet(ism: string): string {
-    return `Salom, ${ism}!`;
-}
-console.log(meet("Farhod"));</code>
+            <code>// Funksiya ikkita sonni qabul qiladi va ularning yig‘indisini qaytaradi
+                function addNumbers(a: number, b: number): number {
+                    return a + b;
+                }
+                
+                // Funksiyani chaqirish va natijani saqlash
+                const result = addNumbers(5, 7);
+                
+                // Natijani konsolga chiqarish
+                console.log(`Yig‘indi: ${result}`);
+            </code>
         </pre>
 
         <h2>Xulosa</h2>
